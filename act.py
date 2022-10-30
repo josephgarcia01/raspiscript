@@ -19,14 +19,14 @@ def search():
 	time.sleep(5)
 	pyautogui.hotkey('ctrl','shift','n') #opens main window 
 	time.sleep(2)
-    pyautogui.hotkey('alt','\t')
-    time.sleep(1)
-    pyautogui.hotkey('alt','f4')
+    	pyautogui.hotkey('alt','\t')
+    	time.sleep(1)
+    	pyautogui.hotkey('alt','f4')
 	#pyautogui.write("")                #user can add any link
 	time.sleep(4)
 	pyautogui.press('enter')
 	time.sleep(3)
-    pyautogui.press('f11')
+    	pyautogui.press('f11')
 
 def keyb():
 ##moves using keyboard strokes
