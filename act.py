@@ -4,7 +4,8 @@ import webbrowser
 import pyautogui
 import time
 import os
-##any instance of time.sleep(x) is for pausing
+##any instance of time.sleep(x) is for 
+##pausing the Pi before doing the next action
 keyboard = Controller()
 pyautogui.FAILSAFE = False
 wh = pyautogui.size()
@@ -19,28 +20,28 @@ def search():
 	time.sleep(5)
 	pyautogui.hotkey('ctrl','shift','n') #opens main window 
 	time.sleep(2)
-    	pyautogui.hotkey('alt','\t')
-    	time.sleep(1)
-    	pyautogui.hotkey('alt','f4')
-	#pyautogui.write("")                #user can add any link
+	pyautogui.hotkey('alt','\t')
+	time.sleep(1)
+	pyautogui.hotkey('alt','f4')
+	time.sleep(2)
+	pyautogui.write("https://ccx1.dhrhs.com:8444/cuicui/permalink/?viewId=D89EC20E10000175000274F00A7F0838&linkType=dashboard") #edit link to specific website
 	time.sleep(4)
 	pyautogui.press('enter')
 	time.sleep(3)
-    	pyautogui.press('f11')
+	pyautogui.press('f11')
 
 def keyb():
 ##moves using keyboard strokes
 ##initial bootup navigation
-##editable per website
-	#pyautogui.write('') #inputs username
+	pyautogui.write('21943') #inputs username
 	for i in range(1):
 		pyautogui.press('\t')
 		time.sleep(3)
 	pyautogui.press('enter')
 	time.sleep(8)
-	#pyautogui.write('') #inputs password
+	pyautogui.write('21943') #inputs password
 	for i in range(1):
-        time.sleep(3)
+		time.sleep(3)
 		pyautogui.press('\t')
 		time.sleep(2)
 	pyautogui.press('enter')
@@ -52,12 +53,12 @@ def keyb():
 
 def zoom():
 #for specific displays, it needs to zoom out
-    time.sleep()
-       if wide == 1366:
-        time.sleep(5)
-        for i in range(4)
-            pyautogui.hotkey('ctrl','-') #zooms the screen out for weird resolution screen
-            time.sleep(2)
+	time.sleep(3)
+	if wide == 1366:
+		time.sleep(5)
+		for i in range(4):
+			pyautogui.hotkey('ctrl','-') #zooms the screen out for weird resolution screen
+			time.sleep(2)
 
 time.sleep(5)
 search()
@@ -76,10 +77,10 @@ else:
 
 ##keeps mouse moving up and down
 while True:
-    now = time.strftime("%H:%M:%S", time.localtime())
+	now = time.strftime("%H:%M:%S", time.localtime())
 	time.sleep(4)
 	pyautogui.moveTo(wide, hl-10, duration=1)
 	time.sleep(4)
 	pyautogui.moveTo(wide, hl+10, duration=1)
-        if (now == 04:00:00):            #at 4am, hits the refresh button
-            pyautogui.press('f5')
+	if (now == "04:00:00"):			#at 4am, hits the refresh button
+		pyautogui.press('f5')
